@@ -8,9 +8,219 @@
   <title>Seung Hoon's Portfolio</title>
   <meta name="description" content="Portfolio for frontend developer Seung Hoon">
   <meta name="author" content="Seung Hoon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+  <!-- Nav Section -->
+  <nav class="nav__container">
+    <!-- Bootstrap code -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Bootstrap end-->
+          <div class="nav justify-content-center justify-content-md-end">
+            <a href="#" class="nav__item home">Home</a>
+            <a href="#" class="nav__item about">About Me</a>
+            <a href="#" class="nav__item skill">Skills</a>
+            <a href="#" class="nav__item portfolio">Portfolio</a>
+            <a href="#" class="nav__item contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Header Section -->
+  <header class="header__container">
+    <!-- Bootstrap code -->
+    <div class="container">
+      <div class="row flex-column-reverse flex-md-row">
+        <div class="col-12 col-md-6">
+          <!-- Bootstrap end-->
+          <section class="header__text">
+            <h1>Hello I'm Seung Hoon</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod placeat, quidem praesentium delectus
+              quasi, fugiat libero dignissimos dolore eaque voluptatibus amet laborum, dolorem cupiditate dolor? Dolorem
+              doloribus perspiciatis corrupti, dolore enim unde suscipit accusantium vitae eveniet quos commodi quas
+              quidem. Minima sequi quas, quae ullam adipisci aliquid fugiat! Maxime nostrum aspernatur error? Architecto
+              debitis nulla illo minima laborum error aut quas. Iusto, ipsa natus! Quae distinctio, tempora ipsa sed
+              ipsam veniam? Corrupti amet voluptatum odio, vero vel incidunt necessitatibus in voluptas neque corporis
+              dolorem recusandae error reiciendis quae cumque expedita ratione exercitationem numquam sapiente porro
+              quaerat facilis! Cupiditate, iste est explicabo quam esse repellat eius id enim laborum recusandae,
+              deserunt amet placeat? Porro, tenetur cum aperiam eum optio accusantium laboriosam sequi earum commodi
+              ullam doloremque ea sunt, natus ratione, enim quasi. Delectus repellat placeat officiis molestias quos
+              odit adipisci porro temporibus ratione minima velit enim reprehenderit similique autem, modi aspernatur
+              tempore veniam quisquam. Dolorum ab dolores, quo excepturi placeat perferendis adipisci doloribus numquam,
+              delectus iusto illum amet accusantium reprehenderit ratione repellendus veritatis? Id nostrum cum
+              doloremque sapiente ullam, cumque quod eum eveniet vitae beatae amet voluptas reiciendis, exercitationem
+              voluptate sed neque labore aperiam dolores. Culpa similique incidunt eaque. Veniam, voluptates! </p>
+          </section>
+        </div>
+        <!-- Bootstrap code -->
+        <div class="col-12 col-md-6">
+          <!-- Bootstrap end-->
+          <!-- Header HTML // Home section -->
+          <section class="header__util">
+            <div class="photo-box">
+              <img src="#" alt="Seung Hoon Image" />
+            </div>
+            <button type="button">Contact Me!</button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- About Section -->
+  <section class="about__container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class=" about__title">About Me</h1>
+          <ul class="about__detail">
+            <li class="detail-list front">
+              <div class="detail-img front-img">
+                <img src="" alt="frontend image">
+              </div>
+              <h3 class="detail-title">Front-end</h3>
+              <ul class="title-list">
+                <li class="title-item">HTML</li>
+                <li class="title-item">CSS</li>
+                <li class="title-item">Javascript</li>
+                <li class="title-item">React</li>
+              </ul>
+            </li>
+            <li class="detail-list back">
+              <div class="detail-img back-img">
+                <img src="" alt="backend image">
+              </div>
+              <h3 class="detail-title">Back-end</h3>
+              <ul class="title-list">
+                <li class="title-item">NodeJS</li>
+                <li class="title-item">Firebase</li>
+              </ul>
+            </li>
+            <li class="detail-list etc">
+              <div class="detail-img etc-img">
+                <img src="" alt="et cetera image">
+              </div>
+              <h3 class="detail-title">ETC</h3>
+              <ul class="title-list">
+                <li class="title-item">Git &amp; notion</li>
+                <li class="title-item">Tistory Blog</li>
+                <li class="title-item">Slack</li>
+                <li class="title-item">Notion</li>
+                <li class="title-item">Figma</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section -->
+  <section class="skills__container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <main class="skills__stack">
+            <h1 class="stack__title">Skills</h1>
+            <ul class="stack__list">
+              <li class="stack__list-item html">
+                <h3 class="proficiency-title html-title">HTML</h3>
+                <p class="proficiency-desc html-desc"></p>
+              </li>
+              <li class="stack__list-item css">
+                <h3 class="proficiency-title css-title">CSS</h3>
+                <p class="proficiency-desc css-desc"></p>
+              </li>
+              <li class="stack__list-item js">
+                <h3 class="proficiency-title js-title">Javascript</h3>
+                <p class="proficiency-desc js-desc"></p>
+              </li>
+              <li class="stack__list-item react">
+                <h3 class="proficiency-title react-title">ReactJS</h3>
+                <p class="proficiency-desc react-desc"></p>
+              </li>
+              <li class="stack__list-item nodejs">
+                <h3 class="proficiency-title node-title">NodeJS</h3>
+                <p class="proficiency-desc node-desc"></p>
+              </li>
+            </ul>
+          </main>
+        </div>
+        <div class="col-12 col-md-4">
+          <aside class="skills__tool">
+            <h1 class="tool__title">Tools</h1>
+            <div class="tool-imgBox">
+              <img src="#" alt="visual studio code" class="vsc">
+            </div>
+            <div class="tool-imgBox">
+              <img src="#" alt="github" class="github">
+            </div>
+            <div class="tool-imgBox">
+              <img src="#" alt="slack" class="slack">
+            </div>
+            <div class="tool-imgBox">
+              <img src="#" alt="notion" class="notion">
+            </div>
+            <div class="tool-imgBox">
+              <img src="#" alt="figma" class="figma">
+            </div>
+          </aside>
+          <aside class="skills__detail">
+            <h1 class="detail__title">Detail</h1>
+            <ul class="detail__list">
+              <li class="detail__list-item">시멘틱하게 HTML로 골격을 잡고, CSS를 이용해 정적인 반응형 웹사이트를 제작할 수 있음</li>
+              <li class="detail__list-item">CSS를 이용해 간단한 에니메이션을 구현 할 수 있음</li>
+              <li class="detail__list-item">Javascript에 대한 이해를 바탕으로 동적인 웹사이트를 제작할 수 있음</li>
+              <li class="detail__list-item">ES6 Javascript 문법을 이해하고 사용할 수 있음</li>
+              <li class="detail__list-item">React를 이용해 기본적인 웹사이트를 제작할 수 있음</li>
+              <li class="detail__list-item">NodeJS Express를 이용해 서버를 만들고 간단한 CRUD 동작을 구현할 수 있음</li>
+              <li class="detail__list-item">Firebase를 이용해 User Authentication과 데이터베이스 CRUD를 구현할 수 있음</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Works Section -->
+  <section class="works__container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <footer class="contact__container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h1 class="contact__title">Contact Me!</h1>
+          <dl class="contact__list">
+            <!-- title은 icon으로 대체해주기 -->
+            <dt class="contact__list-title">Phone</dt>
+            <dd class="contact__list-desc">010-5091-4397</dd>
+            <dt class="contact__list-title">Mail</dt>
+            <dd class="contact__list-desc">
+              <a href="mailto:realgrapejuice@gmail.com">realgrapejuice@gmail.com</a>
+            </dd>
+            <dt class=" contact__list-title">Github</dt>
+            <dd class="contact__list-desc">
+              <a href="https://github.com/realgrapejuice"></a>
+            </dd>
+            <dt class="contact__list-title">Blog</dt>
+            <dd class="contact__list-desc">
+              <a href="https://realgrapejuice.tistory.com/">https://realgrapejuice.tistory.com/</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="col-12 col-md-6"></div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
