@@ -1,17 +1,72 @@
+/* Font Import */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+
 /* Global */
 :root {
   /* Color */
+  --color-mint: #89cac7;
+  --color-yellow: #edc87d;
+  --color-lightPurple: #bbb2bb;
+  --color-deepPurple: #462748;
+  --color-white: #ffffff;
+  --color-pink: #efb0b4;
 
   /* Font Size */
+  --font-large: 70px;
+  --font-medium: 48px;
+  --font-regular: 20px;
+  --font-small: 16px;
 
   /* Font Weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+  --weight-light: 300;
 
   /* Line Height */
 
   /* Size */
+  --space-large: 56px;
+  --space-medium: 30px;
+  --space-regular: 20px;
+  --space-small: 10px;
 }
 
 /* Universal tags */
 * {
   box-sizing: border-box;
+}
+
+*:lang(en) {
+  font-family: "Montserrat", sans-serif;
+}
+
+*:lang(ko) {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  margin-bottom: var(--space-large);
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: var(--space-medium) 0 var(--space-small) 0;
+}
+
+h4 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin-bottom: var(--space-small);
+}
+
+p {
+  font-size: var(--font-small);
+  font-weight: var(--weight-regular);
+  margin-bottom: var(--space-small);
 }
