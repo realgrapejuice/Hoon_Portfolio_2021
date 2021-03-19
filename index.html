@@ -8,9 +8,12 @@
   <title>Seung Hoon's Portfolio</title>
   <meta name="description" content="Portfolio for frontend developer Seung Hoon">
   <meta name="author" content="Seung Hoon">
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- CSS -->
   <link rel="stylesheet" href="./style.css">
+  <!-- Font awesome -->
   <script defer src="https://kit.fontawesome.com/2fbd8c3e62.js" crossorigin="anonymous"></script>
 </head>
 
@@ -22,11 +25,11 @@
       <div class="row">
         <div class="col-12">
           <!-- Bootstrap end-->
-          <div class="nav justify-content-center justify-content-md-end">
+          <div class="nav justify-content-center justify-content-lg-end">
             <a href=" #" class="nav__item home">Home</a>
             <a href="#" class="nav__item about">About Me</a>
             <a href="#" class="nav__item skill">Skills</a>
-            <a href="#" class="nav__item portfolio">Portfolio</a>
+            <a href="#" class="nav__item portfolio">Projects</a>
             <a href="#" class="nav__item contact">Contact</a>
           </div>
         </div>
@@ -117,7 +120,7 @@
   <section class="skills__container">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-8">
+        <div class="col-12 col-lg-6">
           <main class="skills__stack">
             <h1 class="stack__title">Skills</h1>
             <dl class="stack__list">
@@ -144,7 +147,7 @@
             </dl>
           </main>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-6">
           <aside class="skills__tool">
             <h1 class="tool__title">Tools</h1>
             <div class="logo-box">
@@ -279,7 +282,7 @@
   <footer class="contact__container">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-6">
           <h1 class="contact__title">Contact Me!</h1>
           <dl class="contact__list">
             <dt class="contact__list-title">Phone</dt>
@@ -290,15 +293,15 @@
             </dd>
             <dt class=" contact__list-title">Github</dt>
             <dd class="contact__list-desc">
-              <a href="https://github.com/realgrapejuice">https://github.com/realgrapejuice</a>
+              <a href="https://github.com/realgrapejuice" target="_blank">https://github.com/realgrapejuice</a>
             </dd>
             <dt class="contact__list-title">Blog</dt>
             <dd class="contact__list-desc">
-              <a href="https://realgrapejuice.tistory.com/">https://realgrapejuice.tistory.com/</a>
+              <a href="https://realgrapejuice.tistory.com/" target="_blank">https://realgrapejuice.tistory.com/</a>
             </dd>
           </dl>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-6">
           <form class="contact__mailForm" action="https://formspree.io/f/mbjpnvwy" method="POST">
             <label class="mail-input" for="mail-input"> Your email: </label>
             <input id="mail-input" type="email" name="_replyto">
