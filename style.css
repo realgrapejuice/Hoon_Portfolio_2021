@@ -415,10 +415,6 @@ p {
     --space-medium: 26px;
     --space-regular: 14px;
     --space-small: 8px;
-
-    /* Border radius */
-    --radius-large: 30px;
-    --radius-small: 8px;
   }
 
   /* header CSS */
@@ -445,6 +441,7 @@ p {
     width: 250px;
     height: 250px;
     padding: var(--space-small);
+    margin-bottom: var(--space-small);
   }
 
   .header__util .photo-box > img {
@@ -490,35 +487,6 @@ p {
     z-index: -50;
   }
 
-  .proficiency-chart::after {
-    display: block;
-    content: "";
-    height: 10px;
-    background-color: var(--color-yellow);
-    left: 0;
-    top: 0;
-  }
-
-  .html-chart::after {
-    width: 95%;
-  }
-
-  .css-chart::after {
-    width: 85%;
-  }
-
-  .js-chart::after {
-    width: 90%;
-  }
-
-  .react-chart::after {
-    width: 70%;
-  }
-
-  .node-chart::after {
-    width: 60%;
-  }
-
   .proficiency-score::after {
     display: none;
   }
@@ -556,30 +524,16 @@ p {
   }
 
   .works__list-item {
-    width: 400px;
-    height: 300px;
-    margin-right: var(--space-regular);
-    margin-bottom: var(--space-regular);
-    background-color: var(--color-yellow);
+    margin-right: 0;
   }
 
   /* Contact CSS */
   .contact__container {
     padding: var(--space-large);
   }
-
-  .mail-submit {
-    align-self: flex-end;
-    padding: var(--space-small);
-    background-color: transparent;
-    color: var(--color-white);
-    border: 2px solid var(--color-white);
-    border-radius: var(--radius-small);
-    font-weight: var(--weight-semi-bold);
-    transition: all 200ms linear;
-  }
 }
 
+/* col-sm media query */
 @media screen and (max-width: 576px) {
   /* Global */
   :root {
@@ -588,5 +542,79 @@ p {
     --font-medium: 24px;
     --font-regular: 20px;
     --font-small: 16px;
+
+    /* Size */
+    --space-large: 48px;
+    --space-medium: 26px;
+    --space-regular: 14px;
+    --space-small: 8px;
+  }
+
+  /* header CSS */
+  .header__text-title {
+    margin-bottom: var(--space-medium);
+    text-align: center;
+  }
+
+  .header__text-desc {
+    padding: 0 var(--font-large);
+    margin-bottom: var(--space-regular);
+  }
+
+  .header__util {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__util .photo-box {
+    align-self: center;
+    width: 250px;
+    height: 250px;
+    padding: var(--space-small);
+    margin-bottom: var(--space-small);
+  }
+
+  /* About CSS */
+  .about__detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detail-list {
+    width: 100%;
+    margin-bottom: var(--space-large);
+  }
+
+  .detail-img {
+    width: 130px;
+    height: 130px;
+    font-size: calc(var(--font-large) * 1.5);
+    line-height: 130px;
+  }
+
+  .title-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .title-item {
+    margin-right: var(--space-regular);
+  }
+
+  .title-item:last-of-type {
+    margin-right: 0;
+  }
+
+  /* Skills CSS */
+  .tool-imgBox {
+    width: 60px;
+  }
+
+  /* Works CSS */
+  .works__list-item {
+    width: 320px;
+    height: 240px;
   }
 }
