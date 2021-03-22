@@ -14,7 +14,8 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./style.css">
   <!-- Font awesome -->
-  <script defer src="https://kit.fontawesome.com/2fbd8c3e62.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/2fbd8c3e62.js" crossorigin="anonymous"></script>
+  <script defer src="./src/app.js"></script>
 </head>
 
 <body>
@@ -23,14 +24,24 @@
     <!-- Bootstrap code -->
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12" id="nav-parent">
           <!-- Bootstrap end-->
-          <div class="nav justify-content-center justify-content-lg-end">
+          <!-- width > 991px Navigation -->
+          <div class="nav justify-content-lg-end">
             <a href=" #" class="nav__item home">Home</a>
             <a href="#" class="nav__item about">About Me</a>
             <a href="#" class="nav__item skill">Skills</a>
             <a href="#" class="nav__item portfolio">Projects</a>
             <a href="#" class="nav__item contact">Contact</a>
+          </div>
+          <!-- width <= 991px Navigation -->
+          <div class="burger">
+            <button class="burger__btn" type="menu">
+              <i class="fas fa-bars"></i>
+            </button>
+            <button class="times__btn toggled" type="button">
+              <i class="fas fa-times"></i>
+            </button>
           </div>
         </div>
       </div>
