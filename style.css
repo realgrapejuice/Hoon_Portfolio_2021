@@ -1,5 +1,5 @@
 /* Font Import */
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url("https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
 
 /* Reset CSS */
@@ -33,12 +33,13 @@ form {
 /* Global */
 :root {
   /* Color */
-  --color-mint: #89cac7;
-  --color-yellow: #edc87d;
-  --color-lightPurple: #bbb2bb;
-  --color-deepPurple: #462748;
-  --color-white: #ffffff;
-  --color-pink: #efb0b4;
+  --color-white: #feffff;
+  --color-red: #ea3057;
+  --color-lightGrey: #e5e5e5;
+  --color-black: #191919;
+  --color-lightBlack: #b1a7a5;
+  --color-blue: #2c2464;
+  --color-purple: #5c2e5e;
 
   /* Font Size */
   --font-large: 70px;
@@ -75,7 +76,7 @@ form {
 }
 
 *:lang(ko) {
-  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-family: "NanumSquareRound", sans-serif;
 }
 
 /* Typography */
@@ -105,9 +106,10 @@ p {
 
 /* Nav CSS */
 .nav__container {
-  background-color: var(--color-mint);
+  background-color: var(--color-lightGrey);
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .nav {
@@ -116,7 +118,7 @@ p {
 }
 
 .nav__item {
-  color: var(--color-white);
+  color: var(--color-black);
   font-size: var(--font-small);
   font-weight: var(--weight-semi-bold);
   letter-spacing: 0.7px;
@@ -126,7 +128,7 @@ p {
 }
 
 .nav__item:hover {
-  color: #000;
+  color: var(--color-red);
   transition: color 150ms linear;
 }
 
@@ -140,8 +142,8 @@ p {
 
 /* header CSS */
 .header__container {
-  background-color: var(--color-mint);
-  color: var(--color-white);
+  background-color: var(--color-lightGrey);
+  color: var(--color-black);
 }
 
 .header__container .container {
@@ -155,6 +157,7 @@ p {
 .header__util {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .header__util .photo-box {
@@ -169,24 +172,27 @@ p {
 
 .util-contact {
   padding: var(--space-small);
-  color: var(--color-white);
+  color: var(--color-black);
   font-weight: var(--weight-semi-bold);
-  border: 3px solid var(--color-white);
+  border: 3px solid var(--color-black);
   border-radius: var(--radius-small);
   transition: all 200ms linear;
-  align-self: center;
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }
 
 .util-contact:hover {
-  background-color: var(--color-white);
-  color: var(--color-mint);
+  background-color: var(--color-red);
+  color: var(--color-freshGreen);
   transition: all 200ms linear;
 }
 
 /* About CSS */
 .about__container {
   padding: calc(var(--space-medium) * 4) 0;
-  color: var(--color-lightPurple);
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 .about__title {
@@ -207,26 +213,29 @@ p {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: #847689;
+  background-color: var(--color-black);
+  color: var(--color-white);
   position: relative;
   font-size: calc(var(--font-large) * 1.2);
   line-height: 150px;
   margin: 0 auto;
-  z-index: -100;
-  box-shadow: 0px 0px 3px 3px rgba(60, 34, 70, 0.85);
+  z-index: 1;
+  box-shadow: 0px 0px 3px 3px rgba(25, 25, 25, 0.85);
 }
 
 /* Skills CSS */
 .skills__container {
   padding: calc(var(--space-medium) * 4) 0;
-  background-color: var(--color-pink);
+  background-color: var(--color-purple);
+  color: var(--color-white);
   position: relative;
   z-index: -100;
 }
 
 .skills__container h1 {
-  font-size: var(--font-medium);
+  font-size: calc(var(--font-regular) * 1.2);
   margin-bottom: var(--space-regular);
+  color: var(--color-white);
 }
 
 .skills__stack {
@@ -249,7 +258,7 @@ p {
   display: block;
   width: 100%;
   height: 10px;
-  background-color: #000;
+  background-color: var(--color-red);
   position: relative;
   margin-bottom: 0;
   z-index: -50;
@@ -259,7 +268,7 @@ p {
   display: block;
   content: "";
   height: 10px;
-  background-color: var(--color-yellow);
+  background-color: var(--color-white);
   left: 0;
   top: 0;
 }
@@ -306,7 +315,7 @@ p {
 .tool-imgBox {
   width: 60px;
   margin-right: var(--space-medium);
-  margin-bottom: var(--space-s);
+  margin-bottom: var(--space-small);
 }
 
 .tool-imgBox:last-of-type {
@@ -334,12 +343,15 @@ p {
   list-style-type: "-";
   padding-left: var(--space-small);
   margin-bottom: var(--space-small);
+  color: var(--color-white);
+  font-weight: var(--weight-bold);
 }
 
 /* Works CSS */
 .works__container {
   padding: calc(var(--space-medium) * 4) 0;
   background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 .works__list {
@@ -360,7 +372,7 @@ p {
 /* Contact CSS */
 .contact__container {
   padding: calc(var(--space-medium) * 4) 0;
-  background-color: var(--color-deepPurple);
+  background-color: var(--color-blue);
   color: var(--color-white);
 }
 
@@ -448,7 +460,7 @@ p {
 
   .burger__btn:hover,
   .times__btn:hover {
-    color: var(--color-white);
+    color: var(--color-lightGrey);
     transition: color 150ms linear;
   }
 
@@ -475,7 +487,7 @@ p {
   }
 
   .burger__list-link:hover {
-    color: var(--color-white);
+    color: var(--color-red);
     transition: color 200ms linear;
   }
 
@@ -520,11 +532,7 @@ p {
   }
 
   .header__util .photo-box {
-    align-self: center;
-    width: 250px;
-    height: 250px;
-    padding: var(--space-small);
-    margin-bottom: var(--space-small);
+    display: none;
   }
 
   .header__util .photo-box > img {
@@ -564,7 +572,7 @@ p {
     display: block;
     width: 100%;
     height: 10px;
-    background-color: #000;
+    background-color: var(--color-lightGreen);
     position: relative;
     margin-bottom: 0;
     z-index: -50;

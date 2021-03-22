@@ -1,12 +1,13 @@
 "use strict";
 
+// Relative with Hamburger menu
 const burgerMenu = document.querySelector(".burger");
 const burgerBtn = document.querySelector(".burger__btn");
 const timesBtn = document.querySelector(".times__btn");
 
 const leftToRight = (ul) => {
-  ul.style.animation = "leftToRight 500ms linear";
-  ul.style.backgroundColor = "#edc87d";
+  ul.style.animation = "leftToRight 400ms ease-in-out";
+  ul.style.backgroundColor = "#e5e5e5";
 };
 
 const burgerClickEventHandler = () => {
