@@ -12,12 +12,13 @@ const leftToRight = (ul) => {
 const burgerClickEventHandler = () => {
   const ul = document.createElement("ul");
   ul.setAttribute("class", "burger__list");
-  const menuArr = ["Home", "About me", "Skills", "Projects", "Contact"];
+  const menuArr = ["Home", "About me", "Skills", "Works", "Contact"];
   menuArr.map((element) => {
+    const target = element.split(" ")[0].toLowerCase();
     const li = document.createElement("li");
     const a = document.createElement("a");
     li.setAttribute("class", "burger__list-item");
-    a.setAttribute("href", "#");
+    a.setAttribute("href", `#${target}`);
     a.setAttribute("class", "burger__list-link");
     a.innerText = element;
     li.appendChild(a);
