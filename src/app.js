@@ -24,6 +24,10 @@ const burgerClickEventHandler = () => {
     a.innerText = element;
     li.appendChild(a);
     ul.appendChild(li);
+    a.addEventListener("click", () => {
+      clearUl();
+      toggleClass();
+    });
   });
   leftToRight(ul);
   burgerMenu.appendChild(ul);

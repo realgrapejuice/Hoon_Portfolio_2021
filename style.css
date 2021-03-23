@@ -227,7 +227,7 @@ p {
 .skills__container {
   padding: calc(var(--space-medium) * 4) 0;
   background-color: var(--color-purple);
-  color: var(--color-white);
+  color: var(--color-lightGrey);
   position: relative;
   z-index: -100;
 }
@@ -235,7 +235,7 @@ p {
 .skills__container h1 {
   font-size: calc(var(--font-regular) * 1.2);
   margin-bottom: var(--space-regular);
-  color: var(--color-white);
+  color: var(--color-lightGrey);
 }
 
 .skills__stack {
@@ -268,7 +268,7 @@ p {
   display: block;
   content: "";
   height: 10px;
-  background-color: var(--color-white);
+  background-color: var(--color-lightGrey);
   left: 0;
   top: 0;
 }
@@ -343,7 +343,7 @@ p {
   list-style-type: "-";
   padding-left: var(--space-small);
   margin-bottom: var(--space-small);
-  color: var(--color-white);
+  color: var(--color-lightGrey);
   font-weight: var(--weight-bold);
 }
 
@@ -378,6 +378,12 @@ p {
 
 .contact__list-desc > a {
   color: var(--color-white);
+  transition: color 200ms linear;
+}
+
+.contact__list-desc > a:hover {
+  color: var(--color-red);
+  transition: color 200ms linear;
 }
 
 .contact__mailForm {
@@ -417,7 +423,7 @@ p {
 }
 
 .mail-submit:hover {
-  color: var(--color-deepPurple);
+  color: var(--color-blue);
   background-color: var(--color-white);
   transition: all 200ms linear;
 }
@@ -460,7 +466,7 @@ p {
 
   .burger__btn:hover,
   .times__btn:hover {
-    color: var(--color-lightGrey);
+    color: var(--color-red);
     transition: color 150ms linear;
   }
 
@@ -501,14 +507,14 @@ p {
       height: 100vh;
       left: -40%;
       opacity: 0;
-      background-color: var(--color-yellow);
+      background-color: var(--color-lightGrey);
     }
     100% {
       width: 40%;
       height: 100vh;
       left: 0;
       opacity: 1;
-      background-color: var(--color-yellow);
+      background-color: var(--color-lightGrey);
     }
   }
 
@@ -568,16 +574,6 @@ p {
     top: -34px;
   }
 
-  .proficiency-chart {
-    display: block;
-    width: 100%;
-    height: 10px;
-    background-color: var(--color-lightGreen);
-    position: relative;
-    margin-bottom: 0;
-    z-index: -50;
-  }
-
   .proficiency-score::after {
     display: none;
   }
@@ -606,7 +602,7 @@ p {
   .tool-imgBox {
     width: 80px;
     margin-right: var(--space-medium);
-    margin-bottom: 0;
+    margin-bottom: var(--space-medium);
   }
 
   /* Works CSS */
