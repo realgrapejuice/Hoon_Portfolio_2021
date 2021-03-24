@@ -54,6 +54,26 @@ timesBtn.addEventListener("click", () => {
   toggleClass();
 });
 
+// Relative with move to top button
+const home = document.querySelector(".header__container");
+const homeHeight = home.getBoundingClientRect().height;
+const moveToTopBtn = document.querySelector(".move-to-top");
+
+const moveToTop = () => {
+  window.scrollTo(0, 0);
+};
+
+const hideMoveToTopBtn = () => {
+  if (window.scrollY > homeHeight / 2) {
+    moveToTopBtn.classList.add("visible");
+  } else {
+    moveToTopBtn.classList.remove("visible");
+  }
+};
+
+moveToTopBtn.addEventListener("click", moveToTop);
+document.addEventListener("scroll", hideMoveToTopBtn);
+
 // Relative with scroll alarm
 const sectionIds = ["#home", "#about", "#skills", "#works", "#contact"];
 

@@ -438,6 +438,22 @@ p {
   transition: all 200ms linear;
 }
 
+.move-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  color: #ffa242;
+  opacity: 0;
+  pointer-events: none;
+  font-size: var(--font-medium);
+  transition: opacity 300ms ease-in;
+}
+
+.move-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* col-lg media query */
 @media screen and (max-width: 992px) {
   /* Global */
@@ -628,6 +644,11 @@ p {
   .contact__container {
     padding: var(--space-large);
   }
+
+  .move-to-top {
+    right: 15px;
+    font-size: calc(var(--font-medium) / 1.5);
+  }
 }
 
 /* col-sm media query */
@@ -767,5 +788,10 @@ p {
   /* Contact CSS */
   .contact__container {
     padding: 48px 15px;
+  }
+
+  .move-to-top {
+    right: 10px;
+    font-size: var(--font-medium);
   }
 }
