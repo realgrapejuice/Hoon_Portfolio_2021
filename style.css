@@ -483,6 +483,11 @@ p {
     display: none;
   }
 
+  .nav__container.scrolled {
+    background-color: transparent;
+    transition: none;
+  }
+
   .burger {
     display: block;
     font-size: 32px;
