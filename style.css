@@ -110,14 +110,20 @@ p {
 
 /* Nav CSS */
 .nav__container {
-  background-color: var(--color-lightGrey);
-  position: sticky;
+  background-color: transparent;
+  position: fixed;
   top: 0;
   z-index: 1000;
+  width: 100%;
+  padding: var(--space-regular) 0;
+}
+
+.nav__container.scrolled {
+  background-color: var(--color-lightGrey);
+  transition: background-color 300ms linear;
 }
 
 .nav {
-  height: 75px;
   align-items: center;
 }
 
@@ -154,10 +160,11 @@ p {
 .header__container {
   background-color: var(--color-lightGrey);
   color: var(--color-black);
+  padding: 75px 0;
 }
 
 .header__container .container {
-  padding: 40px 15px;
+  padding: 0 15px;
 }
 
 .header__text-title {

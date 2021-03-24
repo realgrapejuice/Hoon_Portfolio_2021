@@ -54,9 +54,29 @@ timesBtn.addEventListener("click", () => {
   toggleClass();
 });
 
-// Relative with move to top button
+// Relative with nav-bar background-color transparent to lightGrey
+const navContainer = document.querySelector(".nav__container");
+
+const transparentToLightGrey = () => {
+  if (window.scrollY > homeHeight / 3) {
+    navContainer.classList.add("scrolled");
+  } else {
+    navContainer.classList.remove("scrolled");
+  }
+};
+
+document.addEventListener("scroll", transparentToLightGrey);
+
+// Relative with make home slowly fade to transparent as the window scrolls down
 const home = document.querySelector(".header__container");
 const homeHeight = home.getBoundingClientRect().height;
+const navTransparentToGrey = () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+};
+
+document.addEventListener("scroll", navTransparentToGrey);
+
+// Relative with move to top button
 const moveToTopBtn = document.querySelector(".move-to-top");
 
 const moveToTop = () => {
