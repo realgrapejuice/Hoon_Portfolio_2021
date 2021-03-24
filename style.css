@@ -180,6 +180,7 @@ p {
 .header__util .photo-box {
   width: 100%;
   padding: var(--space-regular);
+  position: relative;
 }
 
 .header__util .photo-box > img {
@@ -191,18 +192,34 @@ p {
   padding: var(--space-small);
   color: var(--color-black);
   font-weight: var(--weight-semi-bold);
-  border: 3px solid var(--color-black);
-  border-radius: var(--radius-small);
+  font-size: var(--font-regular);
+  letter-spacing: -0.05em;
   transition: all 200ms linear;
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 30px;
+  right: 0;
 }
 
 .util-contact:hover {
-  background-color: var(--color-red);
-  color: var(--color-freshGreen);
-  transition: all 200ms linear;
+  transform: scale(1.05);
+}
+
+.util-contact:hover > .util-contact-hand {
+  display: inline-block;
+  animation: sway 500ms infinite;
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
 }
 
 /* About CSS */
@@ -559,7 +576,7 @@ p {
 
   /* header CSS */
   .header__container {
-    padding: var(--space-large);
+    padding: calc(var(--space-large) * 2) 15px;
   }
 
   .header__container .container {
@@ -577,12 +594,7 @@ p {
   }
 
   .header__util .photo-box {
-    text-align: center;
-  }
-
-  .header__util .photo-box > img {
-    width: 60%;
-    height: 100%;
+    display: none;
   }
 
   .util-contact {
@@ -710,7 +722,7 @@ p {
 
   /* header CSS */
   .header__container {
-    padding: 48px 15px;
+    padding: 55px 15px;
   }
 
   .header__text-title {
@@ -734,11 +746,6 @@ p {
     height: 100%;
     padding: var(--space-small);
     margin-bottom: var(--space-small);
-  }
-
-  .header__util .photo-box > img {
-    width: 80%;
-    height: 100%;
   }
 
   /* About CSS */
