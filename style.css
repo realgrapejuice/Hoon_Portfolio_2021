@@ -156,6 +156,10 @@ p {
   display: none;
 }
 
+.burger:active {
+  border: 1px solid white;
+}
+
 /* header CSS */
 .header__container {
   background-color: var(--color-lightGrey);
@@ -312,7 +316,7 @@ p {
 }
 
 .css-chart::after {
-  width: 85%;
+  width: 90%;
 }
 
 .js-chart::after {
@@ -324,7 +328,7 @@ p {
 }
 
 .node-chart::after {
-  width: 60%;
+  width: 20%;
 }
 
 .proficiency-score::after {

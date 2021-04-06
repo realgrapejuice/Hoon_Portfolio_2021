@@ -14,7 +14,8 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./style.css">
   <!-- Font awesome -->
-  <script defer src="https://kit.fontawesome.com/2fbd8c3e62.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/2fbd8c3e62.js" crossorigin="anonymous"></script>
+  <script defer src="./src/inert.js"></script>
   <script defer src="./src/app.js"></script>
 </head>
 
@@ -35,7 +36,7 @@
             <a href="#contact" class="nav__item contact" data-link="#contact">Contact</a>
           </div>
           <!-- width <= 991px Navigation -->
-          <div class="burger">
+          <div class="burger" tabindex="5">
             <button class="burger__btn" type="menu">
               <i class="fas fa-bars"></i>
             </button>
@@ -55,14 +56,14 @@
         <div class="col-12 col-lg-6">
           <!-- Bootstrap end-->
           <article class="header__text">
-            <h1 class="header__text-title">Hello</br> I'm Seung Hoon</h1>
-            <p lang="ko" class="header__text-desc">별 내린 다 듯합니다. 하나에 아이들의 우는 별들을 사람들의 자랑처럼 별 거외다. 별에도 강아지, 가슴속에 했던
-              버리었습니다. 이제 풀이 많은 이네들은 까닭입니다. 둘 이런 묻힌 계절이 어머님, 별 우는 있습니다. 이웃 못 같이 마디씩 이제 버리었습니다. 못 하나에 무엇인지 아스라히 쉬이 나는 새겨지는
-              하나에 듯합니다. 그리고 하나 별이 옥 이제 별빛이 봅니다. 이름자를 하나에 까닭이요, 듯합니다. 그리고 별 많은 어머님, 까닭입니다. 위에 나는 이름을 계십니다.</p>
-            <p lang="ko" class="header__text-desc">했던 묻힌 북간도에 멀리 이웃 겨울이 별에도 듯합니다. 별에도 아침이 이름자를 옥 많은 별 흙으로 듯합니다. 별 별이 아침이
-              새겨지는 새워 겨울이 노새, 덮어 내 까닭입니다. 남은 강아지, 밤이 까닭이요, 나의 계집애들의 언덕 쓸쓸함과 시인의 계십니다. 잠, 하나에 된 불러 새겨지는 봅니다. 이국 하나의 당신은
-              너무나 라이너 까닭입니다. 별 다 이국 어머님, 슬퍼하는 라이너 벌써 잠, 이름을 봅니다. 이름과, 둘 풀이 쉬이 버리었습니다. 이 풀이 파란 라이너 슬퍼하는 까닭입니다. 차 당신은 청춘이
-              이름과, 하나에 라이너 듯합니다.</p>
+            <h1 class="header__text-title" tabindex="0">Hello</br> I'm Seung Hoon</h1>
+            <p lang="ko" class="header__text-desc" tabindex="0">별 내린 다 듯합니다. 하나에 아이들의 우는 별들을 사람들의 자랑처럼 별 거외다. 별에도 강아지,
+              가슴속에 했던 버리었습니다. 이제 풀이 많은 이네들은 까닭입니다. 둘 이런 묻힌 계절이 어머님, 별 우는 있습니다. 이웃 못 같이 마디씩 이제 버리었습니다. 못 하나에 무엇인지 아스라히 쉬이
+              나는 새겨지는 하나에 듯합니다. 그리고 하나 별이 옥 이제 별빛이 봅니다. 이름자를 하나에 까닭이요, 듯합니다. 그리고 별 많은 어머님, 까닭입니다. 위에 나는 이름을 계십니다.</p>
+            <p lang="ko" class="header__text-desc" tabindex="0">했던 묻힌 북간도에 멀리 이웃 겨울이 별에도 듯합니다. 별에도 아침이 이름자를 옥 많은 별 흙으로
+              듯합니다. 별 별이 아침이 새겨지는 새워 겨울이 노새, 덮어 내 까닭입니다. 남은 강아지, 밤이 까닭이요, 나의 계집애들의 언덕 쓸쓸함과 시인의 계십니다. 잠, 하나에 된 불러 새겨지는
+              봅니다. 이국 하나의 당신은 너무나 라이너 까닭입니다. 별 다 이국 어머님, 슬퍼하는 라이너 벌써 잠, 이름을 봅니다. 이름과, 둘 풀이 쉬이 버리었습니다. 이 풀이 파란 라이너 슬퍼하는
+              까닭입니다. 차 당신은 청춘이 이름과, 하나에 라이너 듯합니다.</p>
           </article>
         </div>
         <!-- Bootstrap code -->
@@ -70,10 +71,11 @@
           <!-- Bootstrap end-->
           <!-- Header HTML // Home section -->
           <section class="header__util">
-            <div class="photo-box">
+            <div class="photo-box" tabindex="0">
               <img src="./src/img/hoon(1).png" alt="Seung Hoon Image" />
             </div>
-            <a href="#contact" class="util-contact">Contact Me <span class="util-contact-hand">👋</span>
+            <a href="#contact" class="util-contact" tabindex="-1" aria-hidden="true">Contact Me <span
+                class="util-contact-hand">👋</span>
             </a>
           </section>
         </div>
@@ -85,42 +87,42 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class=" about__title">About Me</h1>
+          <h1 class=" about__title" tabindex="0" aria-label="About Me 섹션">About Me</h1>
           <ul class="about__detail">
             <li class="detail-list front">
               <div class="detail-img front-img">
                 <i class="fab fa-html5"></i>
               </div>
-              <h3 class="detail-title">Front-end</h3>
+              <h3 class="detail-title" tabindex="0" aria-label="프론트엔드 관련 스택">Front-end</h3>
               <ul class="title-list">
-                <li class="title-item">HTML</li>
-                <li class="title-item">CSS</li>
-                <li class="title-item">Bootstrap</li>
-                <li class="title-item">Javascript</li>
-                <li class="title-item">React</li>
+                <li class="title-item" tabindex="0">HTML</li>
+                <li class="title-item" tabindex="0">CSS</li>
+                <li class="title-item" tabindex="0">Bootstrap</li>
+                <li class="title-item" tabindex="0">Javascript</li>
+                <li class="title-item" tabindex="0">React</li>
               </ul>
             </li>
             <li class="detail-list back">
               <div class="detail-img back-img">
                 <i class="fas fa-server"></i>
               </div>
-              <h3 class="detail-title">Back-end</h3>
+              <h3 class="detail-title" tabindex="0" aria-label="백엔드 관련 스택">Back-end</h3>
               <ul class="title-list">
-                <li class="title-item">NodeJS</li>
-                <li class="title-item">Firebase</li>
+                <li class="title-item" tabindex="0">NodeJS</li>
+                <li class="title-item" tabindex="0">Firebase</li>
               </ul>
             </li>
             <li class="detail-list etc">
               <div class="detail-img etc-img">
                 <i class="fas fa-tools"></i>
               </div>
-              <h3 class="detail-title">ETC</h3>
+              <h3 class="detail-title" tabindex="0" aria-label="기타 스택">ETC</h3>
               <ul class="title-list">
-                <li class="title-item">Git &amp; Github</li>
-                <li class="title-item">Tistory Blog</li>
-                <li class="title-item">Slack</li>
-                <li class="title-item">Notion</li>
-                <li class="title-item">Figma</li>
+                <li class="title-item" tabindex="0">Git &amp; Github</li>
+                <li class="title-item" tabindex="0">Tistory Blog</li>
+                <li class="title-item" tabindex="0">Slack</li>
+                <li class="title-item" tabindex="0">Notion</li>
+                <li class="title-item" tabindex="0">Figma</li>
               </ul>
             </li>
           </ul>
@@ -134,63 +136,66 @@
       <div class="row">
         <div class="col-12 col-lg-6">
           <main class="skills__stack">
-            <h1 class="stack__title">Skills</h1>
+            <h1 class="stack__title" tabindex="0" aria-label="스킬 섹션">Skills</h1>
             <dl class="stack__list">
-              <dt class="proficiency-title html-title">HTML</dt>
+              <dt class="proficiency-title html-title" tabindex="0" aria-label="HTML 숙련도">HTML</dt>
               <dd class="proficiency-chart html-chart"></dd>
-              <dd class="proficiency-score html-score">95%</dd>
+              <dd class="proficiency-score html-score" tabindex="0">95%</dd>
               <!--  -->
-              <dt class="proficiency-title css-title">CSS</dt>
+              <dt class="proficiency-title css-title" tabindex="0" aria-label="CSS 숙련도">CSS</dt>
               <dd class="proficiency-chart css-chart"></dd>
-              <dd class="proficiency-score css-score">85%</dd>
+              <dd class="proficiency-score css-score" tabindex="0">90%</dd>
               <!--  -->
-              <dt class="proficiency-title js-title">Javascript</dt>
+              <dt class="proficiency-title js-title" tabindex="0" aria-label="자바스크립트 숙련도">Javascript</dt>
               <dd class="proficiency-chart js-chart"></dd>
-              <dd class="proficiency-score js-score">90%</dd>
+              <dd class="proficiency-score js-score" tabindex="0">90%</dd>
               <!--  -->
-              <dt class="proficiency-title react-title">ReactJS</dt>
+              <dt class="proficiency-title react-title" tabindex="0" aria-label="리엑트 숙련도">ReactJS</dt>
               <dd class="proficiency-chart react-chart"></dd>
-              <dd class="proficiency-score react-score">70%</dd>
+              <dd class="proficiency-score react-score" tabindex="0">70%</dd>
               <!--  -->
-              <dt class="proficiency-title node-title">NodeJS</dt>
+              <dt class="proficiency-title node-title" tabindex="0" aria-label="노드JS 숙련도">NodeJS</dt>
               <dd class="proficiency-chart node-chart"></dd>
-              <dd class="proficiency-score node-score">60%</dd>
+              <dd class="proficiency-score node-score" tabindex="0">20%</dd>
               </li>
             </dl>
           </main>
         </div>
         <div class="col-12 col-lg-6">
           <aside class="skills__tool">
-            <h1 class="tool__title">Tools</h1>
+            <h1 class="tool__title" tabindex="0" aria-label="사용 가능한 도구">Tools</h1>
             <div class="logo-box">
-              <div class="tool-imgBox">
+              <div class="tool-imgBox" tabindex="0" aria-label="비쥬얼 스튜디오 코드">
                 <img src="./src/img/logo/vsc-logo.png" alt="visual studio code" class="vsc">
               </div>
-              <div class="tool-imgBox">
+              <div class="tool-imgBox" tabindex="0" aria-label="깃허브">
                 <img src="./src/img/logo/GitHub-Mark-120px-plus.png" alt="github" class="github">
               </div>
-              <div class="tool-imgBox">
+              <div class="tool-imgBox" tabindex="0" aria-label="슬랙">
                 <img src="./src/img/logo/Slack_Mark_Web.png" alt="slack" class="slack">
               </div>
-              <div class="tool-imgBox">
+              <div class="tool-imgBox" tabindex="0" aria-label="노션">
                 <img src="./src/img/logo/notion-logo.png" alt="notion" class="notion">
               </div>
-              <div class="tool-imgBox">
+              <div class="tool-imgBox" tabindex="0" aria-label="피그마">
                 <img src="./src/img/logo/figma-logo.png" alt="figma" class="figma">
               </div>
             </div>
           </aside>
           <aside class="skills__detail">
-            <h1 class="detail__title">Detail</h1>
+            <h1 class="detail__title" tabindex="0" aria-label="세부내용">Detail</h1>
             <ul class="detail__list">
-              <li lang="ko" class="detail__list-item">시멘틱한 HTML과 CSS를 이용한 정적인 반응형 웹사이트를 제작 가능</li>
-              <li lang="ko" class="detail__list-item">CSS를 이용한 간단한 애니메이션 구현 가능</li>
-              <li lang="ko" class="detail__list-item">가독성 좋은 Javascript 코드를 이용해 동적인 웹사이트를 제작 가능</li>
-              <li lang="ko" class="detail__list-item">ES6 Javascript 문법을 이해하고 사용할 수 있음</li>
-              <li lang="ko" class="detail__list-item">Javascript의 비동기적인 코드를 사용하여 API를 사용할 수 있음</li>
-              <li lang="ko" class="detail__list-item">React를 이용해 기본적인 웹사이트를 제작할 수 있음</li>
-              <li lang="ko" class="detail__list-item">NodeJS Express를 이용해 서버를 만들고 간단한 CRUD 동작을 구현할 수 있음</li>
-              <li lang="ko" class="detail__list-item">Firebase를 이용해 User Authentication과 데이터베이스 CRUD를 구현할 수 있음</li>
+              <li lang="ko" class="detail__list-item" tabindex="0">시멘틱한 HTML과 CSS를 이용한 정적인 반응형 웹사이트를 제작 가능</li>
+              <li lang="ko" class="detail__list-item" tabindex="0">탭과 스크린리더로 사용할 수 있는 웹사이트를 제작하고 웹접근성을 높일 수 있음</li>
+              <li lang="ko" class="detail__list-item" tabindex="0">CSS를 이용한 간단한 애니메이션 구현 가능</li>
+              <li lang="ko" class="detail__list-item" tabindex="0">가독성 좋은 Javascript 코드를 이용해 동적인 웹사이트를 제작 가능</li>
+              <li lang="ko" class="detail__list-item" tabindex="0">ES6 Javascript 문법을 이해하고 사용할 수 있음</li>
+              <li lang="ko" class="detail__list-item" tabindex="0">Javascript의 비동기적인 코드를 사용하여 API를 사용할 수 있음</li>
+              <li lang="ko" class="detail__list-item" tabindex="0">React를 이용해 기본적인 웹사이트를 제작할 수 있음</li>
+              <li lang="ko" class="detail__list-item" tabindex="0">NodeJS Express를 이용해 서버를 만들고 간단한 CRUD 동작을 구현할 수 있음
+              </li>
+              <li lang="ko" class="detail__list-item" tabindex="0">Firebase를 이용해 User Authentication과 데이터베이스 CRUD를 구현할 수
+                있음</li>
             </ul>
           </aside>
         </div>
@@ -202,7 +207,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>My Works</h1>
+          <h1 tabindex="0" aria-label="프로젝트 섹션">My Works</h1>
           <ul class="works__list">
             <li class="works__list-item">
               <a href="#">
@@ -295,33 +300,38 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">
-          <h1 class="contact__title">Contact Me!</h1>
+          <h1 class="contact__title" tabindex="0" aria-label="연락하기 섹션">Contact Me!</h1>
           <dl class="contact__list">
-            <dt class="contact__list-title">Phone</dt>
-            <dd class="contact__list-desc">010-5091-4397</dd>
-            <dt class="contact__list-title">Mail</dt>
-            <dd class="contact__list-desc">
-              <a href="mailto:realgrapejuice@gmail.com">realgrapejuice@gmail.com</a>
+            <dt class="contact__list-title" tabindex="0">Phone</dt>
+            <dd class="contact__list-desc" tabindex="0"><a href="tel"
+                aria-label="전화번호 0,1,0,5,0,9,1,4,3,9,7,">010-5091-4397</a>
             </dd>
-            <dt class=" contact__list-title">Github</dt>
+            <dt class="contact__list-title" tabindex="0">Mail</dt>
             <dd class="contact__list-desc">
-              <a href="https://github.com/realgrapejuice" target="_blank">https://github.com/realgrapejuice</a>
+              <a href="mailto:realgrapejuice@gmail.com"
+                aria-label="realgrapejuice@gmail.com으로 메일보내기">realgrapejuice@gmail.com</a>
             </dd>
-            <dt class="contact__list-title">Blog</dt>
+            <dt class=" contact__list-title" tabindex="0">Github</dt>
             <dd class="contact__list-desc">
-              <a href="https://realgrapejuice.tistory.com/" target="_blank">https://realgrapejuice.tistory.com/</a>
+              <a href="https://github.com/realgrapejuice" target="_blank"
+                aria-label="한승훈의 깃허브 저장소로 이동하기">https://github.com/realgrapejuice</a>
+            </dd>
+            <dt class="contact__list-title" tabindex="0">Blog</dt>
+            <dd class="contact__list-desc">
+              <a href="https://realgrapejuice.tistory.com/" target="_blank"
+                aria-label="한승훈의 개발 블로그로 이동하기">https://realgrapejuice.tistory.com/</a>
             </dd>
           </dl>
         </div>
         <div class="col-12 col-lg-6">
-          <form class="contact__mailForm" action="https://formspree.io/f/mbjpnvwy" method="POST">
-            <label class="mail-input" for="mail-input"> Your email: </label>
-            <input id="mail-input" type="email" name="_replyto">
-            <label class="mail-text" for="mail-text"> Your message: </label>
-            <textarea id="mail-text" name="message"></textarea>
-            <button class="mail-submit" type="submit">Send</button>
+          <form class="contact__mailForm" action="https://formspree.io/f/mbjpnvwy" method="POST" aria-hidden="true">
+            <label class="mail-input" for="mail-input" tabindex="-1"> Your email: </label>
+            <input id="mail-input" type="email" name="_replyto" tabindex="-1">
+            <label class="mail-text" for="mail-text" tabindex="-1"> Your message: </label>
+            <textarea id="mail-text" name="message" tabindex="-1"></textarea>
+            <button class="mail-submit" type="submit" tabindex="-1">Send</button>
           </form>
-          <button class="move-to-top">
+          <button class="move-to-top" aria-label="페이지 처음으로 이동하기">
             <i class="fas fa-arrow-circle-up"></i>
           </button>
         </div>
