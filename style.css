@@ -46,6 +46,7 @@ form {
   --font-medium: 48px;
   --font-regular: 20px;
   --font-small: 16px;
+  --font-xsmall: 12px;
 
   /* Font Weight */
   --weight-bold: 700;
@@ -395,8 +396,11 @@ p {
 .works__list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1260px;
+  flex: 1;
   text-align: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .works__list-item {
@@ -405,6 +409,88 @@ p {
   margin-right: var(--space-regular);
   margin-bottom: var(--space-regular);
   background-color: var(--color-yellow);
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.works__photo-box {
+  width: 100%;
+}
+
+.works__photo-box > img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.works__stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: var(--font-xsmall);
+  position: relative;
+}
+
+.works__stack > li {
+  margin-right: 10px;
+}
+
+.works__stack > li:last-of-type {
+  margin-right: 0;
+}
+
+.works__list-item:hover::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-lightGrey);
+  color: var(--color-black);
+  font-family: "NanumSquareRound", sans-serif;
+  font-size: var(--font-small);
+  font-weight: var(--weight-light);
+  position: absolute;
+  content: "";
+  top: 0;
+  padding: var(--space-medium);
+  border-radius: 20px;
+  animation: zeroToOne 400ms ease-in-out;
+  pointer-events: none;
+}
+
+.works__list-item:nth-of-type(1):hover::after {
+  content: "기본적인 웹사이트를 마크업하고, 웹접근성을 개선하는 것에 목표를 둔 프로젝트입니다. HTML, CSS, JS를 이용하고 NVDA 스크린리더를 사용해 접근성을 높였습니다.";
+}
+
+.works__list-item:nth-of-type(2):hover::after {
+  content: "멋진 배경화면 위에 자바스크립트를 이용하여 현재 시간, 할 일 목록, 현재 날씨를 확인할 수 있도록 구현한 프로젝트입니다. 브라우저의 로컬 스토리지를 이용해 사용자 정보를 저장하고, Openweather에서 제공하는 API를 이용해 접속한 지역의 현재 날씨를 확인할 수 있도록 구현하였습니다.";
+}
+
+.works__list-item:nth-of-type(3):hover::after {
+  content: "자바스크립트를 이용해 간단한 계산기를 구현한 프로젝트입니다. 매우 단순한 프로젝트지만, HTML의 Data 속성을 활용하고 자바스크립트의 클래스 문법을 활용한 점이 특징입니다.";
+}
+
+.works__list-item:nth-of-type(4):hover::after {
+  content: "프로젝트 별로 할 일 목록을 만들고 콘솔 창에서 효율적으로 관리할 수 있도록 구현한 프로젝트입니다. 리엑트로 빌드하고, PostCSS를 이용해 CSS를 모듈화시켰으며, Firebase에서 제공하는 백앤드 서비스를 이용해 User Auth, Database를 추가했습니다. 기본적인 CRUD가 구현되서 실제로도 사용이 가능하도록 구현하였습니다.";
+}
+
+.works__list-item:nth-of-type(5):hover::after {
+  content: "유튜브 웹사이트를 구현한 프로젝트입니다. 리엑트로 빌드하고, API로 쿼리를 보내 검색을 할 수 있도록 구현했습니다. 유튜브 API를 이용해 원하는 동영상을 검색하고, iframe을 이용해 유튜브 영상을 시청할 수 있습니다.";
+}
+
+.works__list-item:nth-of-type(6):hover::after {
+  content: "리엑트로 웹사이트 탬플릿을 구현한 프로젝트입니다. 라우팅이 가능하도록 구현해 리엑트로 빌드한 싱글페이지 웹이지만, 다른 화면이 보일 수 있도록 구현하였습니다.";
+}
+
+@keyframes zeroToOne {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Contact CSS */
